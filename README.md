@@ -32,8 +32,7 @@ Fill in the sections below yourself, then:
 
 # [Microsoft Ignite 2026](https://ignite.microsoft.com)
 
-## 🔥BRKXXX: SESSION TITLE
-
+## 🔥LAB700: Build agents and skills to transform Dynamics 365 business processes
 ### Session description
 
 Add your session description here. Keep it concise — 2-3 sentences about what attendees will learn and why it matters.
