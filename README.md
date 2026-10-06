@@ -35,7 +35,7 @@ Fill in the sections below yourself, then:
 ## 🔥 LAB700: Accelerate Salesforce Migration with Dynamics 365 Activate
 ### Session description
 
-In this hands on Lab attendee will learn about using the Microsoft Dynamics Activate, this Lab focuses on help attendee learn about the Salesforce-to-Dynamics 365 migration activity using Microsoft Dynamics Activate. By following the step by step instructions attendee will understand how this tool helps to migrate from Salesforce to Dynamics 365 Sales with AI guided process, its benefits, flexibility and ease of use.
+In this hands-on lab, you use Dynamics 365 Activate (preview) to plan and run a Salesforce-to-Dynamics 365 Sales migration. You review what the tool discovers in a connected Salesforce org, including objects, Apex, Lightning UI, usage, licenses, and the security model, and you see how it assesses each object by business priority, complexity, and recommended migration wave. You then follow the AI-guided workflow for the Account object: map it to the existing Dynamics 365 table, generate the migration contract, run the migration, and validate the results on the dashboard. By following the step-by-step instructions, you learn how Activate speeds up migration while keeping the process transparent, flexible, and easy to repeat.
 
 
 
@@ -60,18 +60,17 @@ If you're learning at your own pace:
 
 By the end of this session, you will be able to:
 
-- How Microsoft Dynamics 365 Activate works and its migration process and approach. 
-- Learn to migrate from Salesforce to Dynamics 365 using step by step wizard.
-- Understad the Microsoft Dynamics 365 Activate capabilities and features which helps migrate from Salesforce to Dynamics 365.
-- Realize the benefits of the AI Guided migration process, and apply those in the customer engagement.
-
+- Explain how Dynamics 365 Activate discovers and assesses a Salesforce org, and how its connect, discover, map, and migrate workflow guides a migration to Dynamics 365.
+- Migrate Salesforce Account records to Dynamics 365 by mapping the object, generating the migration contract, running the migration, and validating the results.
+- Apply the benefits of AI-guided migration, such as wave recommendations, complexity scoring, and replacement suggestions, when you plan customer engagements.
 
 ### 💻 Technologies used
 
-- Dynamics 365 Activate
-- Salesforce Sales
+- Dynamics 365 Activate (preview)
+- Salesforce Sales Cloud
 - Dynamics 365 Sales
-- Salesforce to Dynamics 365 Migration
+- Microsoft Dataverse
+- Salesforce to Dynamics 365 migration
 
 ### 📦 Session resources
 
