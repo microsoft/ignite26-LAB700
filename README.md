@@ -32,10 +32,12 @@ Fill in the sections below yourself, then:
 
 # [Microsoft Ignite 2026](https://ignite.microsoft.com)
 
-## 🔥LAB700: Build agents and skills to transform Dynamics 365 business processes
+## 🔥 LAB700: Build agents and skills to transform Dynamics 365 business processes
 ### Session description
 
-Add your session description here. Keep it concise — 2-3 sentences about what attendees will learn and why it matters.
+In this hands on Lab attendee will learn about using the Microsoft Dynamics Activate, this Lab focuses on help attendee learn about the Salesforce-to-Dynamics 365 migration activity using Microsoft Dynamics Activate. By following the step by step instructions attendee will understand how this tool helps to migrate from Salesforce to Dynamics 365 Sales with AI guided process, its benefits, flexibility and ease of use.
+
+
 
 ### 🚀 Getting started
 
@@ -43,33 +45,38 @@ Add your session description here. Keep it concise — 2-3 sentences about what 
 
 If you're following along during a live session:
 
-1. Step 1
-2. Step 2
-3. Open [`instructions/`](instructions/README.md) when this session includes
-   attendee step-by-step guidance
+1. Open the attendee guidance in [`instructions/`](instructions/README.md).
+2. Follow the step-by-step instructions with your session facilitator.
 
 #### On your own
 
 If you're learning at your own pace:
 
 1. Clone this repository
-2. Set up your environment
-3. Follow the session guidance in [`instructions/`](instructions/README.md), or
-   use the linked docs-site entry point when this repository uses that pattern
+2. Open the attendee guidance in [`instructions/`](instructions/README.md).
+3. Follow the step-by-step instructions at your own pace.
 
 ### 🎯 Learning outcomes
 
 By the end of this session, you will be able to:
 
-- Outcome 1
-- Outcome 2
-- Outcome 3
+- How Microsoft Dynamics 365 Activate works and its migration process and approach. 
+- Learn to migrate from Salesforce to Dynamics 365 using step by step wizard.
+- Understad the Microsoft Dynamics 365 Activate capabilities and features which helps migrate from Salesforce to Dynamics 365.
+- Realize the benefits of the AI Guided migration process, and apply those in the customer engagement.
+
 
 ### 💻 Technologies used
 
-- Technology 1
-- Technology 2
-- Technology 3
+- Dynamics 365 Activate
+- Salesforce Sales
+- Dynamics 365 Sales
+- Salesforce to Dynamics 365 Migration
+
+### 📦 Session resources
+
+- [Delivery deck](https://github.com/microsoft/ignite26-LAB700/tree/main/docs/LAB-700.pptx)
+- Session recording: Not available
 
 ### 📚 Continue your learning
 
@@ -101,17 +108,17 @@ For more information, visit the [Learn MCP Server repo](https://aka.ms/learnmcp)
 
 ### 👥 Content owners
 
-<!-- TODO: Add yourself as a content owner
-1. Change the src in the image tag to {your github url}.png
-2. Change INSERT NAME HERE to your name
-3. Change the github url in the final href to your url. -->
-
 <table>
 <tr>
-    <td align="center"><a href="http://github.com/yourGitHubHandle">
-        <img src="https://github.com/yourGitHubHandle.png" width="100px;" alt="INSERT NAME HERE"/><br />
-        <sub><b>INSERT NAME HERE</b></sub></a><br />
-            <a href="https://github.com/yourGitHubHandle" title="talk">📢</a>
+    <td align="center"><a href="https://github.com/bambooo-310">
+        <img src="https://github.com/bambooo-310.png" width="100px;" alt="Bharat Bambhaniya"/><br />
+        <sub><b>Bharat Bambhaniya</b></sub></a><br />
+            <a href="https://github.com/bambooo-310" title="talk">📢</a>
+    </td>
+    <td align="center"><a href="https://github.com/prateekmicrosoft">
+        <img src="https://github.com/prateekmicrosoft.png" width="100px;" alt="Prateek Srivastava"/><br />
+        <sub><b>Prateek Srivastava</b></sub></a><br />
+            <a href="https://github.com/prateekmicrosoft" title="talk">📢</a>
     </td>
 </tr></table>
 
