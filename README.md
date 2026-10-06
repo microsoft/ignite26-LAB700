@@ -32,7 +32,7 @@ Fill in the sections below yourself, then:
 
 # [Microsoft Ignite 2026](https://ignite.microsoft.com)
 
-## 🔥 LAB700: Build agents and skills to transform Dynamics 365 business processes
+## 🔥 LAB700: Accelerate Salesforce Migration with Dynamics 365 Activate
 ### Session description
 
 In this hands on Lab attendee will learn about using the Microsoft Dynamics Activate, this Lab focuses on help attendee learn about the Salesforce-to-Dynamics 365 migration activity using Microsoft Dynamics Activate. By following the step by step instructions attendee will understand how this tool helps to migrate from Salesforce to Dynamics 365 Sales with AI guided process, its benefits, flexibility and ease of use.
