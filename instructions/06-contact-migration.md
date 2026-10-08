@@ -126,7 +126,7 @@ You use the same pages as the Account migration, so this task lists only what is
 
 1. Select **Start Migration**, and then monitor the run until it shows as complete.
 
-    > **Note:** **Start Migration** transfers all mapped objects in the run. Opportunity looks up to Contact through **Contact ID**, so you complete this Contact migration before you migrate Opportunity in [Exercise 7](07-opportunity-migration.md).
+    > **Note:** **Start Migration** transfers all mapped objects in the run. Opportunity looks up to Contact through **Contact ID**, so if you also migrate Opportunity, make sure Contact is loaded before or in the same run.
 
     > **Screenshot pending:** `contact/d365a-migrate-conrun01.png`
 
