@@ -25,5 +25,5 @@ In this lab, you use Dynamics 365 Activate to explore a Salesforce org, review t
 
 - **Bold** text is the name of an item on screen that you select or review.
 - Notes explain why a step matters, and **Important** notes tell you what not to select.
-- Screenshots are stored in [`img/`](../img) and follow the pattern `d365a-<area>-<page><number>.png`. Screenshots used only by the Contact exercise are in [`img/contact/`](../img/contact).
+- Screenshots are stored in [`img/`](../img) and follow the pattern `d365a-<area>-<page><number>.png`.
 - A line with `===` marks a page break when the files are loaded into Skillable.
