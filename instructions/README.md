@@ -2,7 +2,7 @@
 
 ## Lab 700: Accelerate Salesforce migration with Dynamics 365 Activate
 
-In this lab, you use Dynamics 365 Activate to explore a Salesforce org, review the target Dynamics 365 environment, and migrate the **Account** object. Follow the exercises in order, and compare each step with your own screen.
+In this lab, you use Dynamics 365 Activate to explore a Salesforce org, review the target Dynamics 365 environment, and migrate the **Account** and **Contact** objects. Follow the exercises in order, and compare each step with your own screen.
 
 ### Before you begin
 
@@ -19,6 +19,7 @@ In this lab, you use Dynamics 365 Activate to explore a Salesforce org, review t
 | 3 | [Inspect the Account object](03-account-object-details.md) | Review the Account wave, complexity, record types, dependencies, and fields. |
 | 4 | [Review Dynamics, process, and user mapping](04-dynamics-and-user-mapping.md) | Review the target environment, business processes, and user matching. |
 | 5 | [Migrate the Account records](05-account-migration.md) | Map Account, generate the migration contract, run the migration, and validate the result. |
+| 6 | [Migrate the Contact records](06-contact-migration.md) | Inspect Contact's volume, required fields, and parent lookups, confirm the target table, and migrate and validate the records. |
 
 ### Conventions
 
