@@ -35,7 +35,7 @@ Fill in the sections below yourself, then:
 ## 🔥 LAB700: Accelerate Salesforce Migration with Dynamics 365 Activate
 ### Session description
 
-In this hands-on lab, you use Dynamics 365 Activate (preview) to plan and run a Salesforce-to-Dynamics 365 Sales migration. You review what the tool discovers in a connected Salesforce org, including objects, Apex, Lightning UI, usage, licenses, and the security model, and you see how it assesses each object by business priority, complexity, and recommended migration wave. You then follow the AI-guided workflow for the Account object: map it to the existing Dynamics 365 table, generate the migration contract, run the migration, and validate the results on the dashboard. By following the step-by-step instructions, you learn how Activate speeds up migration while keeping the process transparent, flexible, and easy to repeat.
+In this hands-on lab, you use Dynamics 365 Activate (preview) to plan and run a Salesforce-to-Dynamics 365 Sales migration. You create a workspace and project, connect a Salesforce org and a Dynamics 365 environment, and review what the tool discovers, including objects, flows, Apex, Lightning UI, usage, licenses, and the security model, with AI-recommended migration approaches. You then follow the guided workflow to limit the scope to the Account and Contact objects, map them to the existing Dynamics 365 tables, deploy the schema changes, run the migration, and validate the results on the dashboard. By following the step-by-step instructions, you learn how Activate speeds up migration while keeping the process transparent, flexible, and easy to repeat.
 
 
 
@@ -61,7 +61,7 @@ If you're learning at your own pace:
 By the end of this session, you will be able to:
 
 - Explain how Dynamics 365 Activate discovers and assesses a Salesforce org, and how its connect, discover, map, and migrate workflow guides a migration to Dynamics 365.
-- Migrate Salesforce Account records to Dynamics 365 by mapping the object, generating the migration contract, running the migration, and validating the results.
+- Migrate Salesforce Account and Contact records to Dynamics 365 by mapping each object, deploying the schema changes, running the migration, and validating the results.
 - Apply the benefits of AI-guided migration, such as wave recommendations, complexity scoring, and replacement suggestions, when you plan customer engagements.
 
 ### 💻 Technologies used
