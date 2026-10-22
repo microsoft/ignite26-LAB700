@@ -83,15 +83,15 @@ Discovery reads the metadata of your Salesforce org, so you connect it first.
 
     ![Connect to Salesforce section with the login URL, consumer key, and consumer secret fields](../img/d365a-cfg-sfconnect01.png "Connect to Salesforce")
 
-1. Enter the **Login URL**, **Consumer Key / Client ID**, and **Consumer Secret / Client Secret** that your facilitator provided.
+1. Enter the **Login URL**, **Consumer Key / Client ID**, and **Consumer Secret / Client Secret** for the lab Salesforce org.
 
-    > **Note:** Use `https://test.salesforce.com` or your sandbox **My Domain** URL for a sandbox org.
+    > **Note:** Use the **Login URL** provided with the lab. Do not use `https://test.salesforce.com`, because it does not work for the lab Salesforce org.
 
 1. Select **Try Connection**, and then wait until **Connect to Salesforce** shows **Connected**.
 
-1. After the Dynamics 365 connection is set up in the next task, select **SF Discovery** in the left navigation, and then select **Start Discovery** to begin reading your Salesforce metadata.
+1. Select **Discover All** to begin reading your Salesforce metadata.
 
-    ![SF Discovery page with the No Active Discovery message and the Start Discovery button](../img/d365a-sfdisco-start01.png "SF Discovery - Start Discovery")
+    ![Connect to Salesforce section showing Connected with the Try Connection and Discover All buttons](../img/d365a-cfg-sfconnect02.png "Connect to Salesforce - Discover All")
 
 1. Wait while the **Fetching Discovery Data** panel completes each category, such as **Objects**, **Flows**, and **Apex**.
 
@@ -117,7 +117,9 @@ Discovery reads the metadata of your Salesforce org, so you connect it first.
 
 Dynamics 365 is the migration target, so Activate also needs to read its tables and columns.
 
-1. In the left navigation, select **Configuration**, and then select **Edit Connection**.
+1. In the left navigation, select **Configuration**, confirm that **Connection Status** shows Salesforce as **Configured** and Dynamics as **Not configured**, and then select **Connect to Dynamics**.
+
+    ![Configuration page with Salesforce configured, Dynamics not configured, and the Connect to Dynamics button](../img/d365a-cfg-dynconnect03.png "Connection Status - Connect to Dynamics")
 
 1. In the dialog, expand **Connect to Dynamics**, and then review the **Environment URL**, **Tenant ID**, **Client ID (App Registration)**, and **Client Secret Value** fields.
 

@@ -20,33 +20,25 @@ The object details panel shows how complex the Contact migration is, so you know
 
 ===
 
-## Task 2: Review Contact dependencies and fields
+## Task 2: Review Contact relationships and fields
 
-The **Dependencies** tab shows the parent tables that Contact looks up to, and the **Fields** tab shows which fields must have a value in Dynamics 365.
+The fields table in the expanded Contact row shows the lookups Contact depends on and which fields must have a value in Dynamics 365.
 
-1. In the details panel, select the **Dependencies** tab to display the **Entity relationship dependency map**.
+1. In the expanded **Contact** row, scroll down to the fields table.
 
-1. In the map, review the parent tables on the left, such as **Account**, **RecordType**, and **User**.
+1. Near the top of the table, locate **Last Name** (`LastName`), which carries the **Required** property, and **Account ID** (`AccountId`) and **Master Record ID** (`MasterRecordId`), which carry the **Lookup** property.
 
-    ![Contact dependencies tab showing the entity relationship dependency map](../img/d365a-sfdisco-condeps01.png "Contact details - Dependencies tab")
+    ![Contact fields table with the Required and Lookup properties](../img/d365a-sfdisco-confields01.png "Contact details - Fields table")
 
-    > **Note:** The dashed Contact box is a self-reference. One Contact can report to another Contact, so both records must exist before that lookup can be set.
-
-1. In the details panel, select the **Fields** tab to display every Contact field.
-
-1. Near the top of the **Fields** table, locate **Last Name** (`LastName`), which carries the **Required** signal, and **Account ID** (`AccountId`), which carries the **Lookup** signal.
-
-    ![Contact fields table with the Required and Lookup signals](../img/d365a-sfdisco-confields01.png "Contact details - Fields tab")
+    > **Note:** The **Lookup** fields are the parent tables that Contact points to. **Account ID** is filled in for 100% of the contacts, and **Master Record ID** is a self-reference to another Contact.
 
     > **Note:** Contacts that are linked to Accounts need Exercise 5 to be complete, so that the lookup resolves. See [Migrate the Account records](05-account-migration.md).
 
-1. Scroll down to locate **Email** (`Email`), which is populated for every record.
+1. Scroll down to locate **Email** (`Email`), and then check its **Fill Rate**.
 
-    ![Contact fields table, Email and other populated fields](../img/d365a-sfdisco-confields02.png "Contact details - Fields tab, continued")
+1. Select the arrow at the left of the **Contact** row to collapse it.
 
-1. In the upper-right corner of the panel, select **Close object details** (**X**) to close the panel.
-
-    > **Important:** Do not select **Skip object**, because it would move Contact out of the migration scope.
+    > **Important:** Do not select **Ignore**, because it would move Contact out of the migration scope.
 
 ===
 

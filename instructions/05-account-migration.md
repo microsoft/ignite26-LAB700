@@ -36,12 +36,6 @@ The **Mapping Workbench** is where you generate and review the field mappings be
 
     ![Choice configuration for the industry picklist field with automatically created values](../img/d365a-mapping-picklist01.png "Field mapping - Choice configuration")
 
-1. Check every field that shows an alert, and then increase the **Max length** of the text fields so that the migration does not truncate data.
-
-    ![Field mappings list with alerts on the billing address and description fields](../img/d365a-mapping-maxlen01.png "Field mappings - Fields with alerts")
-
-    ![Field mapping dialog with the Max length field highlighted](../img/d365a-mapping-maxlen02.png "Field mapping - Max length")
-
 1. Filter on **owner**, and then select the option to move the **Owner ID** field out of scope.
 
     ![Field mappings filtered on owner with the move out of scope action highlighted](../img/d365a-mapping-owner01.png "Field mappings - Owner field out of scope")
@@ -52,9 +46,35 @@ The **Mapping Workbench** is where you generate and review the field mappings be
 
     ![Account mapping details, Dataverse table design tab](../img/d365a-mapping-tabdesign01.png "Account mapping details - Dataverse table design")
 
-1. Select the **Filter** tab to see the record filter, and then select the **Duplicates** tab and the **Dependencies** tab.
+1. Select the **Filter** tab. The **Record filter** limits which Account records are migrated, so you can move a subset of the data, for example a pilot batch, instead of everything. By default there are no conditions, and every Account record in scope migrates.
 
-    ![Account mapping details, Filter tab with the record filter](../img/d365a-mapping-tabfilter01.png "Account mapping details - Filter")
+1. To see how a filter works, select **Add condition**, set **Field** to **BillingCountry**, leave **Operator** as **equals**, and enter **United States** as the **Value**. The **Generated SOQL preview** shows `WHERE BillingCountry = 'United States'`.
+
+1. Select **Validate & preview count**, and then notice the message **5 of 125 Account records match**.
+
+    ![Account mapping details, Filter tab with a BillingCountry equals United States condition and a preview of 5 of 125 matching records](../img/d365a-mapping-tabfilter01.png "Account mapping details - Filter example")
+
+    > **Why this matters:** A filter applies to the Account extraction step only, so records that don't match are never read or migrated. You can also use **Row limit** to cap the number of records, or switch to **SOQL query** to write the filter yourself.
+
+    > **Important:** Select **Clear** and do not select **Save filter**, because this lab migrates all Account records.
+
+1. Select the **Duplicates** tab. Salesforce often holds the same company more than once, for example "Harbor Point Logistics", "HARBOR POINT LOGISTICS", and "harbor point logistics". **Remove duplicate records** lets you decide which records describe the same real-world thing, and which one to keep, so that only one record is written to the Dynamics 365 `account` table.
+
+1. Set **Remove duplicate records** to **On**, and then define the rule in two parts:
+    - In **Two records are the same when**, select **Add** > **Add row**, set **Field** to **Name**, leave **Operator** as **Same, ignoring capitals and surrounding spaces**, and leave **Value (Dataverse column)** as **Account Name (name)**.
+    - In **When records match, keep**, select **Add rule**, set **Salesforce field** to **CreatedDate**, and set **Prefer** to **Prefer the oldest**.
+
+    ![Account mapping details, Duplicates tab with a rule that matches on Name and keeps the oldest record](../img/d365a-mapping-tabdupes01.png "Account mapping details - Duplicates rule")
+
+1. Select **Preview**, and then review the result: **12 sets of duplicates among 125 Salesforce records. 20 records would not be migrated.**
+
+    ![Duplicates preview showing 12 duplicate sets, 20 records not migrated, and 104 records that will be created](../img/d365a-mapping-tabdupes02.png "Duplicates - Preview")
+
+    > **Why this matters:** Each set shows the **Kept** record and the **Not migrated** records. Lookups that pointed at a removed record, such as Contacts of a removed Account, are moved to the kept record, so no relationships are lost. Records that already exist in Dataverse are left alone, so a rerun doesn't create duplicates.
+
+    > **Important:** Set **Remove duplicate records** back to **Off** and do not select **Save**, because this lab migrates all Account records.
+
+1. Select the **Dependencies** tab to see the tables that Account relates to, whether each link is still in scope, and the Dynamics attribute that receives it.
 
     ![Account mapping details, Dependencies tab with the related tables](../img/d365a-mapping-tabdeps01.png "Account mapping details - Dependencies")
 

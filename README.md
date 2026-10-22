@@ -69,8 +69,8 @@ By the end of this session, you will be able to:
 - Dynamics 365 Activate (preview)
 - Salesforce Sales Cloud
 - Dynamics 365 Sales
+- Dynamics 365 Customer Service
 - Microsoft Dataverse
-- Salesforce to Dynamics 365 migration
 
 ### 📦 Session resources
 

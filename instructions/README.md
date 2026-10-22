@@ -6,7 +6,7 @@ In this lab, you use Dynamics 365 Activate to create a migration project, explor
 
 ### Before you begin
 
-- Open Dynamics 365 Activate at `https://migrate.dynamics.cloud.microsoft/signup`, and use the credentials provided in your lab environment.
+- Open Dynamics 365 Activate at `https://migrate.dynamics.cloud.microsoft/signup`, and sign in with the credentials provided with the lab.
 - Create your own workspace and project in Exercise 1, and use the connection values that your facilitator provides for Salesforce and Dynamics 365.
 - Expect small differences in counts, because the numbers in the screenshots come from the lab Salesforce org.
 

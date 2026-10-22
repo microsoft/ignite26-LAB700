@@ -14,7 +14,7 @@ The **SF Discovery** overview is the starting point for every discovery category
 
 1. Review the category cards, such as **Objects & Relationships**, **Flows & Automation**, and **Apex Code**.
 
-    ![SF Discovery overview with the discovery category cards](../img/d365a-sfdisco-ovw01.png "SF Discovery - Overview")
+    ![SF Discovery overview with the discovery category cards](../img/d365a-sfdisco-ovw03.png "SF Discovery - Overview")
 
 1. Scroll down to review the remaining category cards.
 
@@ -28,27 +28,33 @@ The **SF Discovery** overview is the starting point for every discovery category
 
 The **Objects** page is the most important discovery page for the migration, because it scores every Salesforce object by business priority and complexity.
 
-1. Under **SF Discovery**, select **Objects** to open **Objects & Relationships**.
+1. Under **SF Discovery**, select **Objects** to open **Discovery Results**.
 
-1. At the top of the page, review the summary tiles for total objects, custom objects, high business priority, high complexity, relationships, and recommended skips.
+1. At the top of the page, review the **Assessment Complete** bar and the summary counts for objects, fields, custom objects, standard objects, relationships, and objects that Activate recommends ignoring.
 
-    ![Objects and Relationships summary tiles and filters](../img/d365a-sfdisco-objects01.png "SF Discovery - Objects summary")
+    ![Discovery Results page with the assessment bar, summary counts, and filters](../img/d365a-sfdisco-objects01.png "SF Discovery - Objects summary")
 
-1. Under the tabs, notice the **In scope**, **Out of scope**, and **All** filters, which control which objects the list shows.
+1. In **Objects & Complexity**, notice the filters for tier, risk, tags, and priority score, the search box, and the **Hide Ignored** button, which control which objects the list shows.
 
-1. Scroll down to the **Wave 1** group, and then locate the **Opportunity**, **Account**, and **Email Message** rows.
-
-    ![Wave 1 object list showing the object rows with priority and complexity scores](../img/d365a-sfdisco-objects02.png "SF Discovery - Objects, Wave 1")
+1. Review the first rows, such as **Opportunity** and **Account**. Each row shows the business priority, a complexity score, a risk label, and the recommended **Wave**.
 
     > **Why this matters:** Activate recommends migration waves from business priority and complexity, so high-priority objects are loaded first.
 
-1. In the **Objects & complexity** tab, set **Group by** to **Business area**, and then select **Select all** to select every object in scope.
+1. At the top of the page, set **Business Area** to **Platform** to show **Account**, **Contact**, and **Product2**.
 
-1. In the **Platform** group, clear the check boxes for **Account** and **Contact**, and then select **Move to out of scope**.
+    ![Objects page filtered to the Platform business area, showing Account, Contact, and Product2 with an Ignore button on each row](../img/d365a-sfdisco-scope01.png "Filter the objects by the Platform business area")
 
-    ![Objects and complexity tab with all objects selected except Account and Contact, and the Move to out of scope button](../img/d365a-sfdisco-scope01.png "Limit the migration scope to Account and Contact")
+    > **Why this matters:** Every object stays in scope until you select **Ignore** on it. Ignored objects are skipped in mapping and migration, and you can bring one back with **Opt-in**.
 
-1. Confirm that only **Account** and **Contact** remain in scope.
+1. Leave **Account** and **Contact** as they are, and select **Ignore** on every other object that is still in scope, starting with **Product2**. Change **Business Area** to **Sales**, **Service**, **Activities**, and **Other** to reach the remaining objects. Select **Hide Ignored** so that each object leaves the list after you ignore it.
+
+    ![Objects page filtered to the Sales business area with Hide Ignored selected, showing the objects that are still in scope and their Ignore buttons](../img/d365a-sfdisco-scope02.png "Ignore the remaining in-scope objects")
+
+    > **Important:** Do not select **Ignore** on **Account** or **Contact**. If you ignore one by mistake, select **Opt-in** on its row to bring it back.
+
+1. Set **Business Area** back to **All** (or select **Clear filters**), and then confirm that only **Account** and **Contact** remain in the list and that the summary shows 2 objects.
+
+    ![Objects page with Business Area set to All, showing only Account and Contact after the other objects are ignored](../img/d365a-sfdisco-scope03.png "Only Account and Contact remain in scope")
 
     > **Why this matters:** Account and Contact are the two objects you work with in the mapping and migration exercises, so every other object is out of scope and is not mapped or migrated.
 
