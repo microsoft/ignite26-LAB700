@@ -87,29 +87,19 @@ Discovery reads the metadata of your Salesforce org, so you connect it first.
 
     > **Note:** Use the **Login URL** provided with the lab. Do not use `https://test.salesforce.com`, because it does not work for the lab Salesforce org.
 
-1. Select **Try Connection**, and then wait until **Connect to Salesforce** shows **Connected**.
-
-1. Select **Discover All** to begin reading your Salesforce metadata.
+1. Select **Try Connection**, and then wait until **Connect to Salesforce** shows **Connected**. Select **Discover All**.
 
     ![Connect to Salesforce section showing Connected with the Try Connection and Discover All buttons](../img/d365a-cfg-sfconnect02.png "Connect to Salesforce - Discover All")
+
+1. A popup will ask if you want to enable AI-Enhanced Analysis. Read through the message and select **Enable AI** to get AI recommendations for this discovery.
+
+    ![Enable AI-Enhanced Analysis dialog with the Cancel, Skip AI, and Enable AI buttons](../img/d365a-cfg-aipopup01.png "Enable AI-Enhanced Analysis")
 
 1. Wait while the **Fetching Discovery Data** panel completes each category, such as **Objects**, **Flows**, and **Apex**.
 
     ![Discovery progress panel listing the categories that are being fetched](../img/d365a-sfdisco-progress01.png "SF Discovery - In progress")
 
     > **Why this matters:** You can open other pages while discovery runs, and the counts in the left navigation fill in as each category finishes.
-
-1. When discovery finishes, confirm that the **SF Discovery** badge in the left navigation shows a total count and that every category card shows **View** instead of **Discover**.
-
-    ![Discovery overview after discovery completes, with the AI-Enhanced Analysis banner](../img/d365a-sfdisco-ovw01.png "SF Discovery - Completed")
-
-1. In the **AI-Enhanced Analysis** banner, read the message, and then select **Enable AI Analysis** to get AI recommendations for Flows, Apex, and Lightning components.
-
-    > **Important:** AI analysis shares discovery metadata, such as object, flow, and class names and code, with Azure OpenAI. Treat that metadata as potentially sensitive, and use only the approved lab org.
-
-1. Wait until the banner reports that AI analysis is complete.
-
-    ![AI analysis in progress message](../img/d365a-sfdisco-aiprogress01.png "AI analysis in progress")
 
 ===
 
