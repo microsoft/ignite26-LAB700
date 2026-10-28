@@ -16,13 +16,17 @@ The **Mapping Workbench** is where you generate and review the field mappings be
 
     > **Note:** The workbench shows **No Mappings Yet** until you generate mappings.
 
-1. In the toolbar, select **Auto-Generate Mappings** to create field mappings for the objects that are in scope.
+1. In the toolbar, select **Auto-Generate Mappings** to create field mappings for the Salesforce objects.
 
     ![Mapping Workbench while the mappings are being generated](../img/d365a-mapping-autogen01.png "Mapping Workbench - Generating mappings")
 
-1. When generation finishes, review the **Readiness overview** and the **Table mappings** list, and then confirm that only **Account** and **Contact** are mapped to existing tables.
+1. When generation finishes, review the **Readiness overview** and the **Table mappings** list. The **Existing tables** tab lists every Salesforce object that Activate mapped, but this lab migrates only **Account** and **Contact**.
 
-    > **Important:** All other tables must stay out of scope for this migration. If another table appears in the list, return to Exercise 2 and move it to out of scope.
+1. On the **Existing tables** tab, select **Select all**, and then clear the check boxes for the **Account → account** and **Contact → contact** rows.
+
+1. Select **Move to out of scope** to move all the other objects out of scope in one step, and then confirm that the **Existing tables** tab shows only **Account** and **Contact**.
+
+    > **Important:** All other tables must stay out of scope for this migration. If another table appears on the **Existing tables** tab, select its check box, and then select **Move to out of scope**.
 
 1. In the **Account → account** row, select **Open details** to open the **Account mapping details**.
 

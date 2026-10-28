@@ -1,6 +1,6 @@
 # Exercise 2: Explore Salesforce discovery
 
-In this exercise, you review what Dynamics 365 Activate discovered in the connected Salesforce org, and you limit the migration scope to the two objects that you migrate later. You visit each page under **SF Discovery** so you know what the tool assessed before you migrate any data.
+In this exercise, you review what Dynamics 365 Activate discovered in the connected Salesforce org, and you identify the two objects that you migrate later. You visit each page under **SF Discovery** so you know what the tool assessed before you migrate any data.
 
 > **Note:** The numbers in the screenshots come from the lab Salesforce org. Your counts can differ slightly, but the pages and layout are the same.
 
@@ -24,7 +24,7 @@ The **SF Discovery** overview is the starting point for every discovery category
 
 ===
 
-## Task 2: Review objects and limit the migration scope
+## Task 2: Review objects and identify the objects to migrate
 
 The **Objects** page is the most important discovery page for the migration, because it scores every Salesforce object by business priority and complexity.
 
@@ -44,19 +44,9 @@ The **Objects** page is the most important discovery page for the migration, bec
 
     ![Objects page filtered to the Platform business area, showing Account, Contact, and Product2 with an Ignore button on each row](../img/d365a-sfdisco-scope01.png "Filter the objects by the Platform business area")
 
-    > **Why this matters:** Every object stays in scope until you select **Ignore** on it. Ignored objects are skipped in mapping and migration, and you can bring one back with **Opt-in**.
+    > **Why this matters:** Account and Contact are the two objects you work with in the mapping and migration exercises. Every other object stays in the list until you move it out of scope in Exercise 5, when you generate the mappings.
 
-1. Leave **Account** and **Contact** as they are, and select **Ignore** on every other object that is still in scope, starting with **Product2**. Change **Business Area** to **Sales**, **Service**, **Activities**, and **Other** to reach the remaining objects. Select **Hide Ignored** so that each object leaves the list after you ignore it.
-
-    ![Objects page filtered to the Sales business area with Hide Ignored selected, showing the objects that are still in scope and their Ignore buttons](../img/d365a-sfdisco-scope02.png "Ignore the remaining in-scope objects")
-
-    > **Important:** Do not select **Ignore** on **Account** or **Contact**. If you ignore one by mistake, select **Opt-in** on its row to bring it back.
-
-1. Set **Business Area** back to **All** (or select **Clear filters**), and then confirm that only **Account** and **Contact** remain in the list and that the summary shows 2 objects.
-
-    ![Objects page with Business Area set to All, showing only Account and Contact after the other objects are ignored](../img/d365a-sfdisco-scope03.png "Only Account and Contact remain in scope")
-
-    > **Why this matters:** Account and Contact are the two objects you work with in the mapping and migration exercises, so every other object is out of scope and is not mapped or migrated.
+    > **Important:** Do not select **Ignore** on **Account** or **Contact**. You do not need to ignore any other object in this exercise.
 
 ===
 
@@ -190,4 +180,4 @@ These pages tell you which languages, currencies, licenses, and security structu
 
     > **Why this matters:** The **Dynamics Migration Summary** estimates how many Dynamics 365 security roles and business units you need to create.
 
-**Checkpoint:** You visited every page under **SF Discovery**, and only **Account** and **Contact** are in scope.
+**Checkpoint:** You visited every page under **SF Discovery**, and you identified **Account** and **Contact** as the objects you migrate.
